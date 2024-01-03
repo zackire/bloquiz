@@ -1,0 +1,68 @@
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c4e3e;
+  }
+  .links a {
+    margin-left: 30px; 
+    text-decoration: none;
+    color: #fdeed9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #601700;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #413d51;
+    text-align: center;
+    color: #FFFFF0;
+    padding: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+article {
+    background-color: #b7ab84;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #333;
+}
+
+
+p {
+    color: #555;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #3c4e3e;
+    color: #fdeed9;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }

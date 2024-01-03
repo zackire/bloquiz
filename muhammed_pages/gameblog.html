@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Blog</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="Blog.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+        <h1 style="background-color:#3c4e3e; font-size: 25px;"> Bloquiz 🔍 </h1>
+        <div class="links">
+          <a href="../zakire_pages/homepage.html"> Home Page </a>
+          <a href="../elifsu_pages/bookblog.html"> Books </a>
+          <a href="../selin_pages/tvshowblog.html"> Tv Shows </a>
+          <a href="../emre_pages/movieblog.html"> Movies </a>
+          <a href="../muhammed_pages/gameblog.html"> Games </a> 
+        </div>
+      </div>
+      </header>
+
+
+    <main id="main-container">
+        <a href="gamequiz.html" style="text-align:center; background-color: #413d51;; font-size: 25px; color:#fdeed9; padding: 10px;"> Game Quiz </a>
+        <h1 style="color: black;">Welcome to Our Game Blog</h1>
+        <!-- Skyrim -->
+        <section class="game-container">
+            <h2>The Elder Scrolls V: Skyrim</h2>
+            <img src='https://steamcdn-a.akamaihd.net/steam/apps/489830/header.jpg' alt="Skyrim">
+            <p class="text"> The Elder Scrolls V: Skyrim is an open-world action RPG set in a breathtaking fantasy universe. Developed by Bethesda Game Studios, Skyrim is a part of the renowned Elder Scrolls series. The game's story revolves around the player's character, the Dragonborn, who is on a quest to defeat Alduin the World-Eater, a dragon prophesied to destroy the world. Set in the fictional province of Skyrim, the game's world is replete with medieval cities, rugged mountains, and rich wilderness. Skyrim offers an immersive experience with its detailed character customization, expansive quests, and the freedom to explore at will, encouraging players to live in a world where every choice shapes their story.</p>
+            <button id="skyrimButton">Play Skyrim</button>
+
+        </section>
+
+        <!-- Red Dead Redemption 2 -->
+        <section class="game-container">
+            <h2>Red Dead Redemption 2</h2>
+            <img src='https://steamcdn-a.akamaihd.net/steam/apps/1174180/header.jpg' alt="Red Dead Redemption 2">
+            <p class="text">Red Dead Redemption 2, developed by Rockstar Games, is a profound tale of life and survival in the American Wild West. The game is set in a meticulously crafted open world that captures the end of the era of outlaws and gunslingers. Players assume the role of Arthur Morgan, a member of the Van der Linde gang, navigating through moral dilemmas and the harsh realities of the late 1800s. The game's narrative is compelling, enriched with deep characters and intricate storylines. Its open-world environment allows players to explore diverse landscapes, from snow-capped mountains to vast plains, engaging in various activities like hunting, fishing, and bounty hunting.</p>
+            <button id="rdr2Button">Play Red Dead Redemption 2</button>
+        </section>
+
+        <!-- Cyberpunk 2077 -->
+        <section class="game-container">
+            <h2>Cyberpunk 2077</h2>
+            <img src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+            <p class="text">Cyberpunk 2077, created by CD Projekt Red, is set in the dystopian Night City, a megalopolis obsessed with power, glamour, and body modification. The game immerses players in the role of V, a mercenary outlaw on a mission to find a unique implant that is the key to immortality. The game stands out for its futuristic setting, characterized by neon lights, sprawling skyscrapers, and a society shaped by technology and corporate dominance. Cyberpunk 2077 offers a rich narrative with extensive character customization and a wide array of cybernetic upgrades, providing a deep and personal RPG experience.</p>
+            <button id="cyberpunkButton">Play Cyberpunk 2077</button>
+        </section>
+
+        <!-- The Stanley Parable -->
+        <section class="game-container">
+            <h2>The Stanley Parable</h2>
+            <img src="https://steamcdn-a.akamaihd.net/steam/apps/221910/header.jpg" alt="The Stanley Parable">
+            <p class="text">The Stanley Parable is an interactive storytelling and walking simulator game developed by Galactic Cafe. The game features a unique narrative style, where players take on the role of Stanley, an office worker who discovers that he is the only person left in his office. Guided by a narrator who describes every move Stanley makes, the game breaks the fourth wall in creative and unexpected ways. The Stanley Parable is known for its clever and often philosophical storytelling, presenting multiple choices and endings based on the player's decisions. This game explores the nature of choice and predestination in video games, offering a humorous and thought-provoking experience that challenges conventional game design.</p>
+            <button id="stanleyButton">Play The Stanley Parable</button>
+        </section>
+    </main>
+
+    
+    <footer><p style="padding:5px; margin-bottom:0px; padding:10px;">&copy; Bloquiz.com</p> </footer>
+    <script>
+        // Open game pages in a new tab
+        document.getElementById('skyrimButton').onclick = function() {
+            window.open('https://store.steampowered.com/app/72850/The_Elder_Scrolls_V_Skyrim/', '_blank');
+        };
+        document.getElementById('rdr2Button').onclick = function() {
+            window.open('https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/', '_blank');
+        };
+        document.getElementById('cyberpunkButton').onclick = function() {
+            window.open('https://store.steampowered.com/app/1091500/Cyberpunk_2077/', '_blank');
+        };
+        document.getElementById('stanleyButton').onclick = function() {
+            window.open('https://store.steampowered.com/app/221910/The_Stanley_Parable/', '_blank');
+        };
+    </script>
+
+</body>
+</html>

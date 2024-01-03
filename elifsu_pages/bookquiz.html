@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_el1.css">
+    <link rel="icon" type="image/png" href="LOGO.png">
+    <title> Mini Book Quiz</title>
+  </head>
+
+  <body>
+  <header>
+    <div class="header-content">
+      <h1 style="background-color:#3c4e3e; font-size: 25px;"> Bloquiz 🔍 </h1>
+      <div class="links">
+       <a href="../zakire_pages/homepage.html"> Home Page </a>
+        <a href="../elifsu_pages/bookblog.html"> Books </a>
+        <a href="../selin_pages/tvshowblog.html"> Tv Shows </a>
+        <a href="../emre_pages/movieblog.html"> Movies </a>
+        <a href="../muhammed_pages/gameblog.html"> Games </a> 
+      </div>
+    </div>
+  </header>
+
+    <header>
+        <h1> Mini Book Quiz</h1>
+        <h3 style="font-size: 28px; background-color:#a4beba; padding: 10px;">Welcome to the mini book  quiz <br> <br>
+            Answer the questions and get a book recommendation! <br> <br>
+           <em style="color: #7c1f1f;"> </em> 
+          </h3>
+          <img id="quizGIF" src="taylor-swift.gif" alt="GIF">
+    </header>
+    <main> 
+
+<!--First Question-->
+        <div class="question-container" id="question1">
+            <h2>Question 1</h2>
+            <h2>What is your favorite genre</h2>
+            <div class="answer">
+              <img src="genre/romance.jpeg" alt="Romance" height="300" width="280">
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Romance" onclick="addToArray('Romance', 0);" >Romance</button>
+              </div>
+              <div id="output"></div>
+            </div>
+        
+            <div class="answer">
+                <img src="genre/mystery.jpeg" alt="Mystery" alt="green" height="300" width="280">  
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Mystery" onclick="addToArray('Mystery', 0);">Mystery</button>
+              </div>
+              <div id="output"></div>
+            </div>
+
+            <div class="answer">
+                <img src="genre/crime.jpeg" alt="Crime" height="300" width="280">
+                <div id="buttonContainer">
+                <button class="clickButton" data-value="Crime" onclick="addToArray('Crime', 0);">Crime</button>
+                  </div>
+                  <div id="output"></div>
+            </div>
+        </div>
+
+<!--Second Question-->
+        <div class="question-container" id="question2">
+            <h2>Question 2</h2>
+            <h2>What is your favorite trope?</h2>
+            <div class="answer">
+              <img src="photos/dark academia.jpeg" alt="Dark Academia" height="300" width="280">
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Dark Academia" onclick="addToArray('Dark Academia', 1);">Dark Academia</button>
+              </div>
+              <div id="output"></div>
+            </div>
+        
+            <div class="answer">
+                <img src="photos/friends to lovers.jpeg" alt="Friends to Lovers"  height="300" width="280">  
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Friends to Lovers" onclick="addToArray('Friends to Lovers', 1);">Friends to Lovers</button>
+              </div>
+              <div id="output"></div>
+            </div>
+        
+            <div class="answer">
+                <img src="photos/enemies to lovers.jpeg" alt="Enemies to Lovers" height="300" width="280"> 
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Enemies to Lovers" onclick="addToArray('Enemies to Lovers', 1);">Enemies to Lovers</button>
+              </div>
+              <div id="output"></div>
+            </div>
+        </div>
+
+<!--Third Question-->
+        <div class="question-container" id="question3">
+            <h2>Question 3</h2>
+            <h2>What is your favorite color?</h2>
+            <div class="answer">
+              <img src="photos/black.jpeg" alt="Black" height="300" width="280">
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Black" onclick="addToArray('Black', 2);">Black</button>
+              </div>
+              <div id="output"></div>
+            </div>
+        
+            <div class="answer">
+                <img src="photos/red.jpeg" alt="Red"  height="300" width="280">  
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Red" onclick="addToArray('Red', 2);">Red</button>
+              </div>
+              <div id="output"></div>
+            </div>
+        
+            <div class="answer">
+                <img src="photos/blue.jpeg" alt="Blue" height="300" width="280"> 
+              <div id="buttonContainer">
+                <button class="clickButton" data-value="Blue" onclick="addToArray('Blue', 2);">Blue</button>
+              </div>
+              <div id="output"></div>
+            </div>
+        </div>
+    </main>
+
+<button class="resultButton " onclick="recommendBook();">Show my Result</button> <br>
+
+<h1>YOU SHOULD READ...</h1>
+
+
+
+<div id="resultContainer">
+  <div class="bookResult" id="book1" style="display: none;">
+      <img src="covers/game.jpeg" alt="Book 1" height="300" width="200">
+      <p> The Inheritance Games is a series with 3 books. The story will countuniy with same charcters and with great dynamic. You'll want to solve all the riddles too!</p>
+  </div>
+
+  <div class="bookResult" id="book2" style="display: none;">
+      <img src="covers/good.jpeg" alt="Book 2" height="300" width="200">
+      <p> A Good Girl's Guide to Murder is also becoming a tv show made by BBC. You will definitly enjoy this book if you also like reading Agatha Christie Novels! The characters solve crime as well as there is a little romance goes on!</p>
+  </div>
+    <div class="bookResult" id="book3" style="display: none;">
+        <img src="covers/war.jpeg" alt="Book 1" height="300" width="200">
+        <p> This Is How You Lose the Time War is lyrical amazingly written book that readers who enjoy agents- suspence and romance! Maybe you would not understand the time travelling but it is still worth it to read!</p>
+    </div>
+
+    <div class="bookResult" id="book4" style="display: none;">
+        <img src="covers/addicted.jpeg" alt="Book 2" height="300" width="200">
+        <p> 
+          Addicted to you is a great book if you enjoy friends who become lovers with some drama going around. The characters both have some problems to solve, which adds book the sad part! Hope you love as much as i do!
+        </p>
+    </div>
+
+    <img id="quizGIF" src="tada.gif" alt="GIF">
+
+    
+<script>
+  let answersArray = ['', '', '']; // Array to store user answers for each question
+
+  function addToArray(value, index) {
+      answersArray[index] = value; // Set the answer at the specific index
+      
+      // Your logic to handle button styling or any other operations based on user input
+      const buttons = document.getElementById('question' + (index + 1)).getElementsByClassName('clickButton');
+      
+      for (let i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove('selected');
+      }
+      
+      event.target.classList.add('selected'); // Adds 'selected' class to the clicked button
+  }
+
+  function recommendBook() {
+      const [genre, trope, color] = answersArray;
+
+      let recommendedBookId = '';
+
+      // Logic to determine the recommended book based on user answers
+      if ((genre === 'Mystery' || genre === 'Crime') && (trope === 'Dark Academia' || trope === 'Enemies to Lovers') && (color === 'Black' || color === 'Red')) {
+        recommendedBookId = 'book1';
+      } else if ((genre === 'Crime' || genre === 'Romance') && (trope === 'Friends to Lovers' || trope === 'Dark Academia') && (color === 'Blue'|| color === 'Black' )) {
+        recommendedBookId = 'book2';
+      } else if ((genre === 'Crime') && (trope === 'Enemies to Lovers') && (color === 'Red' || color === 'Blue')) {
+        recommendedBookId = 'book3';
+      } else if ((genre === 'Romance' || genre === 'Mystery') && (trope === 'Friends to Lovers' || trope === 'Enemies to Lovers') && (color === 'Red')) {
+        recommendedBookId = 'book4';
+      }
+      displayBookById(recommendedBookId);
+  }
+
+  function displayBookById(bookId) {
+    const bookDiv = document.getElementById(bookId);
+
+    if (bookDiv) {
+        // Show the book div
+        bookDiv.style.display = 'block';
+
+        // Scroll to the displayed book div for better visibility
+        bookDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+window.onload = recommendBook;
+  
+</script>
+
+<footer>
+  <p style="padding: 5px; margin-bottom: 0px; padding: 10px; text-align: center;">&copy; Bloquiz.com</p>
+</footer>
+
+</body>
+</html>
+

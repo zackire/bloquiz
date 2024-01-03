@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFF0;
+    padding: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c4e3e;
+  }
+  .links a {
+    margin-left: 30px; 
+    text-decoration: none;
+    color: #fdeed9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+main#main-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-preview {
+    background-color: white;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #3c4e3e;
+    color: #fdeed9;
+    padding: 10px;
+    margin-top: auto; 
+    text-align: center;
+}
+
+.text{
+left:0;
+right:0;
+margin:auto;
+margin-top:15px;
+margin-bottom:15px;
+width: 60%;
+
+ }
+ button {
+    background-color: #d3223d; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold font */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+button:hover {
+    background-color: #6e042b; /* Darker blue background on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Slightly larger shadow on hover */
+}

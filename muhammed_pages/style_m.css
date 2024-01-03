@@ -1,0 +1,211 @@
+body {  
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFF0;
+    padding: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c4e3e;
+  }
+
+.links a {
+    margin-left: 30px; 
+    text-decoration: none;
+    color: #fdeed9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#quiz-container {
+    background-color: white;
+    width: 80%;
+    border-radius: 31px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218426;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer{
+    padding-left: 70px;
+    margin-bottom: 31px;
+    margin-top:31px;
+    text-align:left;
+}
+.answer label{
+    display: block;
+    margin-bottom: 5px;
+    width:fit-content;
+    padding:2px;
+}
+.answer label:hover{
+    border-radius:3px;
+    cursor:pointer;
+    box-shadow: 2px 2px 3px 2px grey;
+}
+.answer input[type="radio"] { 
+    display: none;
+  }
+.answer input[type="radio"]:checked + label {
+    background-color: #0bb62a;
+}
+.questionText{
+    font-weight: bold;
+}
+.imageDiv1{
+    margin-top:25px;
+    margin-bottom:25px;
+    left:0;
+    right:0;
+    margin:auto;
+    border-radius:15px;
+    background-image: url("https://media.thenerdstash.com/wp-content/uploads/2021/05/Zelda-Breath-Of-The-Wild-Featured-1920-x-1080.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    width:37%;
+    height:250px;
+}
+.imageDiv2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://www.enago.com/academy/wp-content/uploads/2019/01/AcademicWriter.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+.imageDiv3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://vietnaminsider.vn/wp-content/uploads/2022/07/Video-game.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+.imageDiv4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://www.how2become.com/wp-content/uploads/2018/06/Benefits-of-Puzzle-Solving-for-Adults-Benefit-1-600x400.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+.imageDiv5 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://media.eventhubs.com/images/2022/02/04_snkbnrt.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+.imageDiv6 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://www.gamingdebugged.com/wp-content/uploads/2023/02/evolution-of-game-graphics-1-1000x600.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+.imageDiv7 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://apicms.thestar.com.my/uploads/images/2019/12/29/460936.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+.imageDiv8 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://i.ytimg.com/vi/yPPSM8Kaa6o/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+.imageDiv9 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("https://images.ctfassets.net/cnu0m8re1exe/4g8ng6Xo7Qau8aiV6nIGK/a8c1fbebff06904aa0ac44c1b5692ad0/Untitled_design__88_.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+    height: 250px;
+}
+
+footer {
+    background-color: #3c4e3e;
+    color: #fdeed9;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }

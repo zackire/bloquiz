@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game Quiz</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="style_m.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <h1 style="background-color:#3c4e3e; font-size: 25px;"> Bloquiz 🔍 </h1>
+        <div class="links">
+          <a href="../zakire_pages/homepage.html"> Home Page </a>
+          <a href="../elifsu_pages/bookblog.html"> Books </a>
+          <a href="../selin_pages/tvshowblog.html"> Tv Shows </a>
+          <a href="../emre_pages/movieblog.html"> Movies </a>
+          <a href="../muhammed_pages/gameblog.html"> Games </a> 
+        </div>
+      </div>
+      </header>
+
+    <div id="quiz-container">
+        <h1 style="color: black;">Find Your Game</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p class="questionText">What type of world do you prefer exploring?</p>
+                <div class="imageDiv1"></div>
+                <div class="answer">
+                    <input type="radio" id="q1option1" name="q1" value="Skyrim">
+                    <label for="q1option1">Fantasy realms with magic and mythical creatures.</label>
+                    <input type="radio" id="q1option2" name="q1" value="RedDead">
+                    <label for="q1option2">Realistic, historical settings.</label>
+                    <input type="radio" id="q1option3" name="q1" value="Cyberpunk">
+                    <label for="q1option3">Futuristic and sci-fi environments.</label>
+                    <input type="radio" id="q1option4" name="q1" value="Stanley">
+                    <label for="q1option4">Surreal, dream-like worlds.</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p class="questionText">How important is story complexity to you?</p>
+                <div class="imageDiv2"></div>
+                <div class="answer">
+                    <input type="radio" id="q2option1" name="q2" value="Skyrim">
+                    <label for="q2option1">I love deep, complex stories.</label>
+                    <input type="radio" id="q2option2" name="q2" value="RedDead">
+                    <label for="q2option2">A moderate level of story depth is fine.</label>
+                    <input type="radio" id="q2option3" name="q2" value="Stanley">
+                    <label for="q2option3">I prefer simple, straightforward stories.</label>
+                    <input type="radio" id="q2option4" name="q2" value="Cyberpunk">
+                    <label for="q2option4">I don't care about story in games.</label> 
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p class="questionText">Your preferred gameplay style is:</p>
+                <div class="imageDiv3"></div>
+                <div class="answer">
+                    <input type="radio" id="q3option1" name="q3" value="RedDead">
+                    <label for="q3option1">Action-packed and fast-paced.</label>
+                    <input type="radio" id="q3option2" name="q3" value="Cyberpunk">
+                    <label for="q3option2">Tactical and thought-provoking.</label>
+                    <input type="radio" id="q3option3" name="q3" value="Skyrim">
+                    <label for="q3option3">Exploration and discovery-oriented.</label>
+                    <input type="radio" id="q3option4" name="q3" value="Stanley">
+                    <label for="q3option4">Puzzle-solving and problem-cracking.</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p class="questionText">Do you enjoy solving puzzles in games?</p>
+                <div class="imageDiv4"></div>
+                <div class="answer">
+                    <input type="radio" id="q4option1" name="q4" value="Stanley">
+                    <label for="q4option1">Yes, the more challenging, the better!</label>
+                    <input type="radio" id="q4option2" name="q4" value="Skyrim">
+                    <label for="q4option2">Occasionally, but they shouldn't be too hard.</label>
+                    <input type="radio" id="q4option3" name="q4" value="RedDead">
+                    <label for="q4option3">Only simple puzzles.</label>
+                    <input type="radio" id="q4option4" name="q4" value="Cyberpunk">
+                    <label for="q4option4">No, I don't like puzzles in games.</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p class="questionText">How do you feel about combat in games?</p>
+                <div class="imageDiv5"></div>
+                <div class="answer">
+                    <input type="radio" id="q5option1" name="q5" value="RedDead">
+                    <label for="q5option1">I love intense combat.</label>
+                    <input type="radio" id="q5option2" name="q5" value="Skyrim">
+                    <label for="q5option2">I would prefer sword and magic.</label>
+                    <input type="radio" id="q5option3" name="q5" value="Cyberpunk">
+                    <label for="q5option3">I'd like to use robotic arms and combat drones.</label>
+                    <input type="radio" id="q5option4" name="q5" value="Stanley">
+                    <label for="q5option4">I prefer games without any combat.</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p class="questionText">What graphic style appeals to you the most?</p>
+                <div class="imageDiv6"></div>
+                <div class="answer">
+                    <input type="radio" id="q6option1" name="q6" value="RedDead">
+                    <label for="q6option1">Realistic, high-definition graphics.</label>
+                    <input type="radio" id="q6option2" name="q6" value="Skyrim">
+                    <label for="q6option2">Stylized and artistic.</label>
+                    <input type="radio" id="q6option3" name="q6" value="Cyberpunk">
+                    <label for="q6option3">Futuristic!</label>
+                    <input type="radio" id="q6option4" name="q6" value="Stanley">
+                    <label for="q6option4">I'm not particular about graphics.</label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p class="questionText">Which pacing do you prefer in a game?</p>
+                <div class="imageDiv7"></div>
+                <div class="answer">
+                    <input type="radio" id="q7option1" name="q7" value="RedDead">
+                    <label for="q7option1">Fast-paced, keeping me on the edge of my seat.</label>
+                    <input type="radio" id="q7option2" name="q7" value="Cyberpunk">
+                    <label for="q7option2">A balance between action and downtime.</label>
+                    <input type="radio" id="q7option3" name="q7" value="Skyrim">
+                    <label for="q7option3">Slow-paced, allowing me to take in the scenery.</label>
+                    <input type="radio" id="q7option4" name="q7" value="Stanley">
+                    <label for="q7option4">It varies depending on my mood.</label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p class="questionText">How important is character development?</p>
+                <div class="imageDiv8"></div>
+                <div class="answer">
+                    <input type="radio" id="q8option1" name="q8" value="RedDead">
+                    <label for="q8option1">I love deep character arcs and development.</label>
+                    <input type="radio" id="q8option2" name="q8" value="Skyrim">
+                    <label for="q8option2">It's somewhat important, but not the main focus.</label>
+                    <input type="radio" id="q8option3" name="q8" value="Cyberpunk">
+                    <label for="q8option3">I prefer gameplay over character development.</label>
+                    <input type="radio" id="q8option4" name="q8" value="Stanley">
+                    <label for="q8option4">Characters aren't important to me.</label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p class="questionText">How long do you typically like to spend on a game?</p>
+                <div class="imageDiv9"></div>
+                <div class="answer">
+                    <input type="radio" id="q9option1" name="q9" value="Skyrim">
+                    <label for="q9option1">I love long, epic adventures that take many hours.</label>
+                    <input type="radio" id="q9option2" name="q9" value="RedDead">
+                    <label for="q9option2">Moderate length, not too short but not overly long.</label>
+                    <input type="radio" id="q9option3" name="q9" value="Stanley">
+                    <label for="q9option3">Short and sweet games that I can finish quickly.</label>
+                    <input type="radio" id="q9option4" name="q9" value="Cyberpunk">
+                    <label for="q9option4">It depends on the game.</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" id="submit-btn">Find My Game!</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <footer><p style="padding:5px; margin-bottom:0px; padding:10px;">&copy; Bloquiz.com</p> </footer>
+    <script src="script.js"></script>
+</body>
+</html>

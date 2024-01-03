@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style_ek_1.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Film Quiz</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+        <h1 style="background-color:#3c4e3e; font-size: 25px;"> Bloquiz 🔍 </h1>
+        <div class="links">
+          <a href="../zakire_pages/homepage.html"> Home Page </a>
+          <a href="../elifsu_pages/bookblog.html"> Books </a>
+          <a href="../selin_pages/tvshowblog.html"> Tv Shows </a>
+          <a href="../emre_pages/movieblog.html"> Movies </a>
+          <a href="../muhammed_pages/gameblog.html"> Games </a> 
+        </div>
+      </div>
+    </header>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container">
+        <!-- Quiz Title Container -->
+        <div class="quiz-title-container">
+            <h2> Which Movie Character Are You?</h2>
+        </div>
+
+        <!-- Question Container -->
+        <div id="question-container"></div>
+
+        <!-- Show Result Button -->
+        <button id="show-result-button" style="display:none;" onclick="showResult()">Sonuçları Göster</button>
+
+        <!-- Result Container -->
+        <div id="result-container">
+            <p id="result"></p>
+            <img id="result-image" src="" alt="Result Character">
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Quiz sorularını ve kullanıcının cevaplarını saklamak için değişkenler
+        const questions = [
+            // Soru 1
+            {
+                question: "1.Which movie genre do you prefer?",
+                answers: [
+                    { text: "Action", character: "John Wick", image: "https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2023/09/19/1193246-1356574275.jpg?itok=BRXMCUKH" },
+                    { text: "Comedy", character: "Deadpool", image: "https://hips.hearstapps.com/hmg-prod/images/the-hangover-64b1815a621f7.jpg?" },
+                    { text: "Drama", character: "Forrest Gump", image: "https://tr.web.img4.acsta.net/newsv7/19/03/21/13/43/0997489.jpg" },
+                    { text: "Sci-Fi", character: "Star Wars", image: "https://hips.hearstapps.com/hmg-prod/images/mv5bmtexmzu0odcxndheqtjeqwpwz15bbwu4mde1oti4mzay-v1-1589813214.jpg" }
+                ]
+            },
+            // Soru 2
+            {
+                question: "2.Which characteristic feature do you prefer a hero with?",
+                answers: [
+                    { text: "Brave", character: "Superman", image: "https://i.guim.co.uk/img/static/sys-images/Film/Pix/pictures/2008/07/30/braveheart5460.jpg?width=620&dpr=1&s=none" },
+                    { text: "Funny", character: "Deadpool", image: "https://www.tablohane.com/img/blogKapak/kapak-Deadpool.jpg" },
+                    { text: "Emotional", character: "Forrest Gump", image: "https://videocdn.alem.com.tr/Documents/Alem_Dergi/images/2022/05/11/2-110520227533c592.jpg" },
+                    { text: "Clever", character: "Tony Stark", image: "https://img-s3.onedio.com/id-544eca6a2e5dd1c245eb25e8/rev-0/w-600/h-337/f-jpg/s-a2f4897479cbf71460bb68e5c5fecb2f168d2f73.jpg" }
+                ]
+            },
+            // Soru 3
+            {
+                question: "3.Which movie character's adventure would you like to experience?",
+                answers: [
+                    { text: "Harry Potter", character: "Harry Potter", image: "https://sm.ign.com/ign_tr/cover/h/harry-pott/harry-potter-the-series_p1mc.jpg" },
+                    { text: "James Bond", character: "James Bond", image: "https://vogue.com.tr/static//original/23-10/15/daniel-craig.jpeg" },
+                    { text: "Indiana Jones", character: "Indiana Jones", image: "https://hips.hearstapps.com/hmg-prod/images/harrison-ford-indiana-jones-649da0a102993.jpeg?crop=0.503xw:1.00xh;0.364xw,0&resize=1200:*" },
+                    { text: "Ellen Ripley", character: "Ellen Ripley", image: "https://static.wikia.nocookie.net/finalgirls/images/f/ff/Ellen_Ripley.jpg/revision/latest?cb=20230322034313" }
+                ]
+            },
+            // Soru 4
+            {
+                question: "4.Which movie series are you a fan of?",
+                answers: [
+                    { text: "Marvel", character: "Iron Man", image: "https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg?region=0,0,540,810&width=480" },
+                    { text: "The Lord of the Rings", character: "Frodo", image: "https://assets-prd.ignimgs.com/2022/08/02/lord-of-the-rings-thumbnail-1659474646743.jpg" },
+                    { text: "Star Wars", character: "Luke Skywalker", image: "https://lumiere-a.akamaihd.net/v1/images/hb_disneyplus_skywalkersaga_mobile_19267_e964ed2c.jpeg?region=0,0,640,400" },
+                    { text: "Harry Potter", character: "Harry Potter", image: "https://sm.ign.com/ign_tr/cover/h/harry-pott/harry-potter-the-series_p1mc.jpg" }
+                ]
+            },
+            // Soru 5
+            {
+                question: "5.Which character's lifestyle do you adopt?",
+                answers: [
+                    { text: "Tony Stark", character: "Tony Stark", image: "https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2020/09/15/463731-2075721354.jpg?itok=ZDilHExz" },
+                    { text: "Shrek", character: "Shrek", image: "https://yenisakaryacom.teimg.com/crop/1280x720/yenisakarya-com/uploads/2023/12/shrek-izle-shrek-full-izle.jpeg" },
+                    { text: "Forrest Gump", character: "Forrest Gump", image: "https://tr.web.img4.acsta.net/newsv7/19/03/21/13/43/0997489.jpg" },
+                    { text: "Darth Vader", character: "Darth Vader", image: "https://lumiere-a.akamaihd.net/v1/images/darth-vader-main_4560aff7.jpeg" }
+                ]
+            }
+        ];
+        let userAnswers = [];
+
+        // HTML elementlerini seçmek için değişkenler
+        const questionContainer = document.getElementById('question-container');
+        const resultContainer = document.getElementById('result-container');
+        const resultText = document.getElementById('result');
+        const resultImage = document.getElementById('result-image');
+        const showResultButton = document.getElementById('show-result-button');
+
+        // Quiz'i başlatan fonksiyon
+        function startQuiz() {
+            showQuestions();
+        }
+
+        // Soruları gösteren fonksiyon
+        function showQuestions() {
+            questions.forEach((currentQuestion, index) => {
+                // Her soru için bir div oluştur
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('question');
+                questionElement.innerHTML = `<h2>${currentQuestion.question}</h2>`;
+
+                // Her soru için cevapları gösteren bir div oluştur
+                const answerContainer = document.createElement('div');
+                answerContainer.id = `answer-container-${index}`;
+                currentQuestion.answers.forEach((answer, answerIndex) => {
+                    // Her cevap için bir buton oluştur
+                    const button = document.createElement('button');
+                    button.classList.add('answer-button');
+                    button.dataset.character = answer.character; // Karakter için bir veri (data) özelliği ekle
+                    button.innerHTML = `<img src="${answer.image}" alt="${answer.character}">${answer.text}`;
+                    button.addEventListener('click', function () {
+                        selectAnswer(answer.character, index);
+                    });
+                    answerContainer.appendChild(button);
+                });
+
+                // Soru div'ine cevap div'ini ekle
+                questionElement.appendChild(answerContainer);
+                // Soru container'a soru div'ini ekle
+                questionContainer.appendChild(questionElement);
+            });
+        }
+
+        // Kullanıcının cevap seçmesini işleyen fonksiyon
+        function selectAnswer(character, questionIndex) {
+            userAnswers[questionIndex] = character;
+
+            // Aynı sorudaki tüm butonlardan 'selected' sınıfını kaldır
+            const buttonsInQuestion = document.querySelectorAll(`#answer-container-${questionIndex} .answer-button`);
+            buttonsInQuestion.forEach(button => {
+                button.classList.remove('selected');
+            });
+
+            // Seçilen butona 'selected' sınıfını ekle
+            const selectedButton = document.querySelector(`#answer-container-${questionIndex} .answer-button[data-character="${character}"]`);
+            if (selectedButton) {
+                selectedButton.classList.add('selected');
+            }
+
+            // Tüm soruların cevaplandığı kontrol et
+            if (userAnswers.length === questions.length && userAnswers.every(Boolean)) {
+                showResultButton.style.display = 'block';
+            }
+        }
+
+        // Sonucu gösteren fonksiyon
+        function showResult() {
+            // Her karakterin kaç kez seçildiğini sayan bir nesne
+            const characterCounts = {};
+            userAnswers.forEach(character => {
+                characterCounts[character] = (characterCounts[character] || 0) + 1;
+            });
+
+            // En çok seçilen karakteri ve kaç kez seçildiğini bulan değişkenler
+            let mostFrequentCharacter = null;
+            let maxCount = 0;
+
+            // En çok seçilen karakteri bulmak için tüm soruları döngüye al
+            questions.forEach(question => {
+                question.answers.forEach(answer => {
+                    const count = characterCounts[answer.character] || 0;
+                    if (count > maxCount) {
+                        maxCount = count;
+                        mostFrequentCharacter = answer.character;
+                    }
+                });
+            });
+
+            // Eğer en çok seçilen karakter bulunduysa
+            if (mostFrequentCharacter) {
+                // Sonucun karakterini bul
+                const resultCharacter = questions.find(question => question.answers.some(answer => answer.character === mostFrequentCharacter));
+
+                // Sonucu ekranda göster
+                resultText.innerText = `Congrats! The right character for you: ${mostFrequentCharacter}`;
+                resultImage.src = resultCharacter.answers.find(answer => answer.character === mostFrequentCharacter).image;
+                resultContainer.style.display = 'block';
+                questionContainer.style.display = 'none';
+                showResultButton.style.display = 'none';
+            }
+        }
+
+        startQuiz();
+    </script>
+</body>
+</html>
