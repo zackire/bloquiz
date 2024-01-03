@@ -8,4 +8,4 @@ selin_pages belongs to Selin Mert 20211802020
 
 emre_pages belongs to  Emre Kızılöz 20211805027
 
-muhammed_pages belongs to Muhammed Ali İzgün
+muhammed_pages belongs to Muhammed Ali İzgün 20221805056
