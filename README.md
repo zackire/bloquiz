@@ -2,13 +2,13 @@
 A collaborative website including both fun quizzes and blogs created to explore the basics of JavaScript, HTML, and CSS. 
 
 # Features
-## Interactive Quiz: Basic question-and-answer format to keep users engaged.
-## Simple UI: Minimalist design focused on user-friendliness and accessibility.
+### Interactive Quiz: Basic question-and-answer format to keep users engaged.
+### Simple UI: Minimalist design focused on user-friendliness and accessibility.
 
 # Technologies Used
-## HTML: Structuring the content and quiz layout
-## CSS: Styling the UI to enhance user experience
-## JavaScript: Adding interactivity and quiz functionality
+### HTML: Structuring the content and quiz layout
+### CSS: Styling the UI to enhance user experience
+### JavaScript: Adding interactivity and quiz functionality
 
 # Pages
 - We have various Quizzes and Blogs to entertain users.
@@ -26,9 +26,13 @@ A collaborative website including both fun quizzes and blogs created to explore 
 Clone the repository:
 
 bash
+
 Kodu kopyala
+
 git clone https://github.com/yourusername/Bloquiz.git
+
 Open the index.html file in your preferred browser to start the quiz.
+
 
 # Authors
 Zakire Çukur, Elifsu Akın, Selin Mert, Emre Kızılöz, Muhammed Ali İzgün 
